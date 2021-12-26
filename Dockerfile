@@ -4,7 +4,7 @@ LABEL maintainer="imfanshilin@gmail.com"
 
 COPY install_vapoursynth_tools.sh /opt
 
-RUN apt update \
+RUN apt update -y \
     && apt upgrade -y \
     && apt install -y build-essential cmake curl git gcc g++ x264 locales \
                     nasm yasm autoconf automake coreutils libtool pkg-config libfftw3-dev \
