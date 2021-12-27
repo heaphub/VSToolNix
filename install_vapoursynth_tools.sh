@@ -51,3 +51,6 @@ make install
 mv /usr/local/lib/libtonemap.so /usr/local/lib/vapoursynth
 mv /usr/local/lib/libtonemap.la /usr/local/lib/vapoursynth
 cd .. && rm -rf vapoursynth-tonemap
+
+LD_LIBRARY_PATH=/usr/local/lib
+export LD_LIBRARY_PATH
