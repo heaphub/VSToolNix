@@ -1,4 +1,5 @@
 #!/bin/bash
+
 filename=$(date +%m%d%H%M)
 if [ ! -d "./Products" ]; then
     mkdir ./Products
