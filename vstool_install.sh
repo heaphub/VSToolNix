@@ -50,3 +50,15 @@ make install
 mv /usr/local/lib/libtonemap.so /usr/local/lib/vapoursynth
 mv /usr/local/lib/libtonemap.la /usr/local/lib/vapoursynth
 cd .. && rm -rf vapoursynth-tonemap
+
+# vapoursynth-tonema
+cd /opt
+git clone https://github.com/Hinterwaeldlers/vapoursynth-hqdn3d.git
+cd vapoursynth-hqdn3d
+./autogen.sh
+./configure
+make -j$(nproc)
+make install
+mv /usr/local/lib/libhqdn3d.so /usr/local/lib/vapoursynth
+mv /usr/local/lib/libhqdn3d.la /usr/local/lib/vapoursynth
+cd .. && rm -rf vapoursynth-hqdn3d
