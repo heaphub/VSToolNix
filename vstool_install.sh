@@ -20,7 +20,7 @@ cd .. && rm -rf zimg
 
 # vapoursynth R53
 cd /opt
-git clone -b R54 https://github.com/vapoursynth/vapoursynth.git 
+git clone -b R53 https://github.com/vapoursynth/vapoursynth.git 
 cd vapoursynth 
 ./autogen.sh
 ./configure
