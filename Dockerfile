@@ -15,7 +15,7 @@ RUN apt update -y \
     && cd /opt \
     && bash vstool_install.sh \
     && localedef -c -f UTF-8 -i zh_CN zh_CN.utf8 \
-    && apt autoremove -y build-essential pkg-config cmake gcc g++ nasm yasm autoconf automake libtool zlib1g-dev \
+    && apt autoremove -y build-essential pkg-config cmake gcc g++ locales nasm yasm autoconf automake libtool zlib1g-dev \
                     libboost-filesystem-dev libboost-system-dev \
     && rm -f /opt/vstool_install.sh
 
